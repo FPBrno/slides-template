@@ -22,6 +22,23 @@ main :: IO
 main = print 42
 ~~~
 
+Example Math
+------------
+
+MathJax is OK. Make sure that appropriate part of the `Makefile` is uncommented.
+
+Display math:
+
+\\[
+    \\lambda x y . x
+\\]
+
+$$ f(x) \to y $$
+
+Inline math: \\( f(x) \\to y \\).
+
+Backslashes can be tricky...
+
 <div class="handout">
 
 * Notes for speaker

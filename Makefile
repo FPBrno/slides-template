@@ -1,7 +1,7 @@
 PANDOC=pandoc
 # PANDOC_OPTS+=-t slidy -S -s --webtex
 PANDOC_OPTS+=-t slidy -S -s
-# PANDOC_OPTS+=--mathjax="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+PANDOC_OPTS+=--mathjax="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
 PANDOC_OPTS+=--css slides.css
 PANDOC_OPTS+=--email-obfuscation=none
 
