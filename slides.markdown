@@ -1,7 +1,7 @@
 ---
 title: Extensible Effects
 subtitle: Effectful Computations Composable
-author: Matej
+author: Matej Kollár <br/>[github.com/xkollar](https://github.com/xkollar)
 date: 2017-02-22
 ---
 
@@ -36,7 +36,7 @@ Monad Transformers
 
 * `State s a`{ .hs } → `Monad m => StateT s m a`{ .hs }
 
-. . .
+<div class="incremental">
 
 
 ~~~ { .hs }
@@ -45,6 +45,8 @@ newtype ProtocolT m a = ProtocolT (ReaderT Request (WriterT Response (MaybeT m))
 ~~~
 
 `:-(`
+
+</div>
 
 <div class="handout">
 * All operations on the protocol depend on whole stack
@@ -116,13 +118,15 @@ main =     runM (runConsoleIO hello)
 --     Eff '[Console, IO] () -'
 ~~~
 
-. . .
+<div class="incremental">
 
 ~~~ { .hs }
 runConsolePure :: [String] -> Eff (Console ': r) a
     -> Eff r (a, ([String], [String]))
     -- ^ (value, (unconsumed input, produced output))
 ~~~
+
+</div>
 
 <div class="handout">
 * Pure interpreter: how to test things without need for dark wizardry.
