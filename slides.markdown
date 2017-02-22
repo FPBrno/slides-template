@@ -1,16 +1,16 @@
-% Talk Title \
-(Talk Subtitle)
-% John Smith \
-<jsmith+whatever@example.com>
-% May 2015
+---
+title: Talk Title
+subtitle: Talk Subtitle
+author: John Smith <br/>[github.com/jsmith](https://github.com/jsmith)
+date: February 2017
+---
 
 We are FPB
 ----------
 
-<div class="vbox"></div>
-<div class="hbox" style="height: 80%">
-<img src="http://fpbrno.github.io/images/FPB.svg">
-</div>
+<div class="vbox"></div
+><div class="hbox" style="height: 80%"><img src="http://fpbrno.github.io/images/FPB.svg"
+></div>
 
 Example Code
 ------------
