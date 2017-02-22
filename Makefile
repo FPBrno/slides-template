@@ -5,7 +5,7 @@ PANDOC_OPTS+=--mathjax="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=
 PANDOC_OPTS+=--css slides.css
 PANDOC_OPTS+=--email-obfuscation=none
 
-TARGET_FILE=rmme.html
+TARGET_FILE=slides.html
 
 all: $(TARGET_FILE)
 
