@@ -40,7 +40,7 @@ Monad Transformers
 
 
 ~~~ { .hs }
-newtype ProtocolT m a = ProtocolT (ReaderT Reuest (WriterT Response (MaybeT m)) a)
+newtype ProtocolT m a = ProtocolT (ReaderT Request (WriterT Response (MaybeT m)) a)
   deriving (Applicative, Functor, Monad)
 ~~~
 
@@ -59,7 +59,7 @@ Extensible Effects
 * One monad to rule them all, into effects bind them.
 
 ~~~ { .hs }
-type Protocol = '[Reader Reuest, Writer Response, Exc ()]
+type Protocol = '[Reader Request, Writer Response, Exc ()]
 action :: Members Protocol effs => Eff effs a
 --  action :: Monad m => ProtocolT m a
 ~~~
