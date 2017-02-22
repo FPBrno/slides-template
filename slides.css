@@ -11,7 +11,13 @@ div.slide h1 {
 body {
   background-color: #ddd;
 }
-@import url(http://fonts.googleapis.com/css?family=Inconsolata:400,700);
+@import url('//fonts.googleapis.com/css?family=Inconsolata:400,700');
+/*
+@import url('//fonts.googleapis.com/css?family=Roboto');
+* {
+  font-family: 'Roboto', sans-serif;
+}
+*/
 code {
   font-family: Inconsolata, monospace;
 }

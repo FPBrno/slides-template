@@ -1,7 +1,7 @@
 ---
 title: Extensible Effects
 subtitle: Effectful Computations Composable
-# author:
+author: Matej
 date: 2017-02-22
 ---
 
@@ -140,7 +140,7 @@ Conclusion
 ==========
 
 * I hope you got curious
-* freer-effects <https://github.com/IxpertaSolutions/freer-effects>
+* <https://github.com/IxpertaSolutions/freer-effects>
 * Pull requests are welcome `:-)`
 
 Questions?
